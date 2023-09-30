@@ -14,7 +14,7 @@ import javax.persistence.Table;
 //query = "SELECT e FROM Question e WHERE e.question =  ?1 AND e.result  = ?2")
 
 
-@NamedQueries({
+@NamedQueries(  {
     @NamedQuery(name="Question.findByQuestionAndResult", query="SELECT e FROM Question e WHERE e.question =  ?1 AND e.result  = ?2"),
     @NamedQuery(name="Question.findByQuestionAndDomain", query="SELECT e FROM Question e WHERE e.domain = ?1"),
     @NamedQuery(name="Question.findByQuestionAndUserResult",query="SELECT e FROM Question e WHERE e.question = ?1 AND e.domain =?2"),
